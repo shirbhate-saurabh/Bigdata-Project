@@ -65,10 +65,10 @@ marks = {'P2':[{'S1': date(2019, 7, 17),
 
 def get_value(student_id, type_of_value):
     if type_of_value == 'Marks':
-        print("Marks of: ", student_id)
+        #print("Marks of: ", student_id)
         type_of_value = 1
     else:
-        print("Date of: ", student_id)
+        #print("Date of: ", student_id)
         type_of_value = 0
     
     dict_marks = marks[student_id][type_of_value]
