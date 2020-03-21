@@ -6,7 +6,7 @@ doctor = {
           3: {'first_name':'J.S.', 'last_name': 'Chandra'}
          }
 
-#Patient Table##########PENDING#################
+#Patient Table
 
 patient = {
            11:{'first_name':'Saurabh', 'last_name':'S', 'address':'New Panvel','city':'Navi Mumbai','state':'Maharashtra'},
@@ -31,7 +31,7 @@ payment_receipt = {
 #Appointment Table
 appointment_details = {
                        '15-10-2018':{'appointment_time':'10:30 AM', 'appointment_duration':'00:30:00',
-                                     'appointment_reason':'Report Checking'},
+                                     'appointment_reason':'Report Checking', 'doctor_id':1},
                        '20-10-2018':{'appointment_time':'06:30 PM', 'appointment_duration':'01:00:00',
-                                     'appointment_reason':'Routine Checkup'}
+                                     'appointment_reason':'Routine Checkup', 'doctor_id':3}
                       }
