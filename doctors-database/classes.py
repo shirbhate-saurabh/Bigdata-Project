@@ -39,7 +39,9 @@ class Aappointment:
         pass
     
     def appointment_id_generator():
-        appointment_id = datetime.now()
+        temp = datetime.now().timestatmp()
+        temp1 = str(temp).replace('.','')
+        appointment_id = temp1
     
     
     
