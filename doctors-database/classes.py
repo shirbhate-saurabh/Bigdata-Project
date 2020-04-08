@@ -1,4 +1,4 @@
-"""creating classes for doctor database in which base class is "Person" and other classes are
+r"""creating classes for doctor database in which base class is "Person" and other classes are
    "doctor", "patient", "appointment\""""
 
 from collections import defaultdict
@@ -42,3 +42,17 @@ class Aappointment(Person):
         return appointment_id
 
 
+
+a1 = Person("Rohan","Shirke","Nerul")
+print("enter the first_name :")
+a2 = input()
+print("enter the last_name :")
+a3 = input()
+print("enter the address :")
+a4 = input()
+a1.first_name.append(a2)
+a1.last_name.append(a3)
+a1.address.append(a4)
+print(a1.first_name)
+print(a1.last_name)
+print(a1.address)
