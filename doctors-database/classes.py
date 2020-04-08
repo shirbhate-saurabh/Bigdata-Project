@@ -1,6 +1,3 @@
-"""creating classes for doctor database in which base class is "Person" and other classes are
-   "doctor", "patient", "appointment\""""
-
 from collections import defaultdict
 from datetime import datetime
 
@@ -16,7 +13,7 @@ class Person:
         self.address = ["panvel","ghatkopar","vashi","bhingari"]
         
         
-class Doctor:
+class Doctor(Person):
 
     def doctor_id_generator():
         temp = defaultdict(lambda: len(temp) + 1)
@@ -25,7 +22,7 @@ class Doctor:
         print(doctor_id)
 
 
-class Patient:
+class Patient(Person):
 
     def patient_id_generator():
         temp = defaultdict(lambda: len(temp) + 1000)
@@ -33,29 +30,11 @@ class Patient:
         patient_id = str(temp1)
         return patient_id
 
-class Aappointment:
+class Aappointment(Person):
 
     def appointment_id_generator():
         temp = datetime.now().timestatmp()
         temp1 = str(temp).replace('.','')
         appointment_id = temp1
         return appointment_id
-        
-        
-"""class main():
-    rohan = Person("Rohan","shirke","nerul")
-    
-    print("this is programe :")
-    print("details are as mentioned below")
-    print("Enter name :", rohan.first_name.append())
-    print("patient_id id : ")
-    print("appointment ID is : ",rohan.appointment_id_generator())
-    
-    
-if __name__ == "__main__":
-    main()
-"""
-    
-    
-            
         
