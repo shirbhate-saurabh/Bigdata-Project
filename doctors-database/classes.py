@@ -1,3 +1,6 @@
+"""creating classes for doctor database in which base class is "Person" and other classes are
+   "doctor", "patient", "appointment\""""
+
 from collections import defaultdict
 from datetime import datetime
 
@@ -11,7 +14,7 @@ class Person:
         self.last_name = ["S","Shirbhate","Kale","Shivkar"]
         
         self.address = ["panvel","ghatkopar","vashi","bhingari"]
-        
+
         
 class Doctor(Person):
 
@@ -37,4 +40,5 @@ class Aappointment(Person):
         temp1 = str(temp).replace('.','')
         appointment_id = temp1
         return appointment_id
-        
+
+
