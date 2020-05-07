@@ -3,8 +3,8 @@ description: data cleaning and processing script
 """
 
 from csv import reader
-
-
+import nump as np
+from collections import defaultdict
 
 def load_csv(filename):
     """
@@ -41,6 +41,30 @@ def cols_to_int(dataset, cols):
         dataset = convert_to_int(dataset, col)
     return dataset
 
+def mean(dataset, cols):
+    """
+    args: dataset(list), cols (list)
+    returns: dataset(list)
+    converts string values to string in the dataset
+    """  
+    for col in cols:
+        dataset = convert_to_int(dataset, col)
+    return dataset
+
+
+def summary(dataset, columns):
+    """
+    args: dataset(list), columns (list)
+    returns: dataset(list)
+    provides statistical summary of the dataset
+    """
+
+    summary_by_state = defaultdict(list)
+    for row in dataset:
+        continue 
+    return summary
+
+
 def training(training_data):
     pass
 
@@ -53,6 +77,10 @@ def main():
     
     # Convert string to int
     dataset = cols_to_int(dataset, [2, 3, 4, 5, 6, 7, 8])
+
+    # Exploratory analysis
+    
+    # group by state: mean, median, mode, 
 
     # Removing null values and cleaning
     print(dataset[1:5])
