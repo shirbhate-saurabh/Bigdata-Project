@@ -3,7 +3,7 @@ description: data cleaning and processing script
 """
 
 from csv import reader
-import nump as np
+import numpy as np
 from collections import defaultdict
 
 def load_csv(filename):
@@ -25,7 +25,7 @@ def convert_to_int(dataset, index):
     """
     args: dataset(list), index (list)
     returns: dataset(list)
-    converts string values to string in the dataset
+    converts string values to Int in the dataset
     """
     for row in dataset[1:]:
         row[index] = float(row[index].strip())
@@ -35,7 +35,7 @@ def cols_to_int(dataset, cols):
     """
     args: dataset(list), cols (list)
     returns: dataset(list)
-    converts string values to string in the dataset
+    converts string values to Int in the dataset
     """  
     for col in cols:
         dataset = convert_to_int(dataset, col)
@@ -45,7 +45,7 @@ def mean(dataset, cols):
     """
     args: dataset(list), cols (list)
     returns: dataset(list)
-    converts string values to string in the dataset
+    converts string values to Int in the dataset
     """  
     for col in cols:
         dataset = convert_to_int(dataset, col)
@@ -83,7 +83,7 @@ def main():
     # group by state: mean, median, mode, 
 
     # Removing null values and cleaning
-    print(dataset[1:5])
+    print(dataset[0:5])
 
 
 if __name__ =='__main__':
