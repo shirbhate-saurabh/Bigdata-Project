@@ -8,6 +8,6 @@ Big Data Projects is a collection of practice big data projects developed primar
 * student-database
 * doctor-database
 * corona-timeseries-forecasting
-
+* Web-Scrapper
 
 
